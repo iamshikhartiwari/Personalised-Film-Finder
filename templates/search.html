@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='/css/search_style.css') }}">
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    /* .autocomplete {
+      position: relative;
+      display: inline-block;
+    }
+     */
+    .autocomplete-items {
+      position: absolute;
+    border: 3px solid #497ea7;
+    border-bottom: none;
+    border-top: none;
+    z-index: 1;
+    top: 86%;
+    left: 0;
+    right: 9%;
+    }
+    
+    .autocomplete-items div {
+      padding: 9px;
+    cursor: pointer;
+    background-color: #687ec3d1;
+    border-bottom: 2px solid #d4d4d4;
+    }
+    
+    /*when hovering an item:*/
+    .autocomplete-items div:hover {
+      background-color: #e9e9e9; 
+    }
+
+    .autocomplete-active {
+      background-color: DodgerBlue !important; 
+      color: #ffffff; 
+    }
+    </style>
+</head>
+<body>
+  <div class="main">
+    <div class="text">
+      <lottie-player class="lottie" src="https://assets7.lottiefiles.com/datafiles/397tkqLfSbPbfm9/data.json" background="transparent" speed="1" style="width: 150px;height: 147px;margin: 0px;position: fixed;top: 25px;left: 22px;" loop="" autoplay=""> 
+      </lottie-player>
+      <h2 class="main2">Film Finder</h2>
+      <div class="thou">
+      <h1>Ready to find-out??</h1>
+      <h6> what you should watch</h6>
+    </div>
+    </div>
+    <div class="autocomplete" style="width:300px;">
+    <div class="search-box">
+      <input type="text" placeholder="What's on your mind..." id="search-input" name="movies">
+      <button onclick="search()"><i class="fas fa-search"></i></button>
+    </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="{{ url_for('static', filename='/js/scpt.js') }}"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
+<script src="{{ url_for('static', filename='/js/autocomplete.js') }}"></script>
+</body>
+</html>

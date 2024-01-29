@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Genre-Result</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/genre-details.css') }}">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+  <div class="main">
+    <div class ="header">
+      <lottie-player class="lottie" src="https://assets7.lottiefiles.com/datafiles/397tkqLfSbPbfm9/data.json" background="transparent" speed="1" style="width: 150px;height: 147px;margin: 0px;position: absolute;top: 4vh;left: 4vh;" loop="" autoplay="">
+      </lottie-player>
+      <div class="title">Film Finder</div>
+    </div>
+    <div class="heading" id="genreDiv"></div>
+  <div class="movies" id="movieList" ></div>
+</div>
+<script src="{{ url_for('static', filename= '/js/genre-details.js')}}"></script>  </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Top-50 Movies</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/style_top_50.css') }}">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+  <div class="main3">
+    <div class =header>
+      <lottie-player class="lottie" src="https://assets7.lottiefiles.com/datafiles/397tkqLfSbPbfm9/data.json" background="transparent" speed="1" style="width: 150px;height: 147px;margin: 0px;position: relative;top:4vh;left: 4vh;" loop="" autoplay="">
+        
+      </lottie-player>
+      <div class="main2">Film Finder</div>
+    </div>
+    <div class="heading">Top 50 Movies</div>
+  <div id="movie-container" style="display: flex; flex-wrap:wrap;justify-content: center; align-items: center; position: relative; top:3vh;" ></div>
+</div>
+</div>
+  <script src="{{ url_for('static', filename='/js/script_top_50.js') }}"></script>
+
+
+  </script>
+</body>
+</html>

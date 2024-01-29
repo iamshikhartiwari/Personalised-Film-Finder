@@ -1,0 +1,148 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.main{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url("/static/images/backgroud.jpg");
+  background-size: cover;
+  filter: brightness(80%);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+h6{
+font-size: 24px;
+color: seashell;
+letter-spacing: 9px;
+}
+.thou{
+display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.text{
+height: 24%;
+display: flex;
+flex-wrap: wrap;
+justify-content: flex-end;
+align-items: self-start;
+bottom: 46%;
+position: absolute;
+left: 36%;
+}
+h1{
+font-family: sans-serif;
+  font-size: 46px;
+  color: antiquewhite;
+}
+
+.main2{
+height: 103px;
+  
+}
+h2{
+position: fixed;
+  color: aliceblue;
+  font-size: 85px;
+  z-index: 1;
+  top: 5%;
+  right: 3%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  font-family: sans-serif;
+  letter-spacing: -4px;
+
+}
+h3{
+font-size: 4.5rem;
+  color: white;
+  position: relative;
+  float: right;
+  left: 1060px;
+  top: 46px;
+  font-family: sans-serif
+}
+#searchResults{
+color: white;
+z-index: 5;
+}
+.main::before {
+ width: 100%;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0) 10%,
+    rgba(0, 0, 0, 0) 90%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+}
+
+.search-box {
+border-radius: 15px;
+position: absolute;
+top: 49%;
+left: 50%;
+transform: translate(-50%, -50%);
+/* background-color: #030000; */
+padding: 0px;
+display: flex;
+align-items: center;
+height: 66px;
+width: 587px;
+}
+
+.search-box input[type="text"] {
+width: 733px;
+height: 27px;
+padding: 8px;
+font-size: 36px;
+font-style: revert;
+border-radius: 8px;
+text-align: center;
+color: #fff;
+background: #00000042;
+border: 1.2px solid #d4d4d4;
+}
+.search-box input[type="text"]::placeholder {
+  color: whitesmoke;
+}
+.search-box button {
+  padding: 8px;
+  font-size: 23px;
+  background-color: #8aa0e330;
+  margin-left: 3px;
+  border-radius: 7px;
+  border: 1.5px solid #c5c5d7;
+  width: 11%;
+}
+
+.fa-search:before {
+  content: "\f002";
+  color: whitesmoke;
+}
+
+.movie-details {
+  margin-top: 20px;
+  color: white;
+  font-size: 18px;
+}
+.result{
+display: flex;
+flex-direction: column;
+
+}
+p{
+padding: 0;
+margin: 0;
+
+}

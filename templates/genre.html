@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Genre</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/genre.css') }}">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide&effect=outline|shadow-multiple">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<style>
+  hr.solid {
+  border-top: 2px solid powderblue;;
+}
+</style>
+<body>
+    <div class="main">
+      <lottie-player class="lottie" src="https://assets7.lottiefiles.com/datafiles/397tkqLfSbPbfm9/data.json" background="transparent" speed="1" style="width: 150px;height: 147px;margin: 0px;position: fixed;top: 25px;left: 22px;" loop="" autoplay="">
+        
+      </lottie-player>
+      <h3 class="main2">Film Finder</h3>
+      <h1 class="font-effect">Genre</h1>
+
+      <div class="container">
+        <div class="card card0">
+          <div class="border" id="type-genre">
+          <h2>Action</h2>  
+        </div>
+      </div>
+        <div class="card card1">
+          <div class="border" id="type-genre">
+            <h2>Comedy</h2>  
+          </div>
+        </div>
+        <div class="card card2">
+          <div class="border" id="type-genre">
+            <h2>Drama</h2>  
+          </div>
+        </div>
+        <div class="card card3">
+          <div class="border" id="type-genre">
+            <h2>Romance</h2>  
+          </div>
+        </div>
+        <div class="card card4" >
+          <div class="border" id="type-genre">
+            <h2>Horror</h2>
+          </div>
+        </div>
+        <div class="card card5">
+          <div class="border" id="type-genre">
+            <h2>Western</h2>
+          </div>
+        </div>
+        <div class="card card6">
+          <div class="border" id="type-genre">
+            <h2>Crime</h2>
+          </div>
+        </div>
+        <div class="card card7">
+          <div class="border" id="type-genre">
+            <h2>Thriller</h2>
+          </div>
+        </div>
+        <div class="card card8">
+          <div class="border" id="type-genre">
+            <h2>Mystery</h2>
+          </div>
+        </div>
+        <div class="card card9">
+          <div class="border" id="type-genre">
+            <h2>Adventure</h2>
+          </div>
+        </div>
+        <div class="card card10">
+          <div class="border" id="type-genre">
+            <h2>Documentary</h2>
+          </div>
+        </div>
+        <div class="card card11">
+          <div class="border" id="type-genre">
+            <h2>Music</h2>
+          </div>
+        </div>
+      </div>
+      <div class="foot">
+        <div class="badge">
+          <p class="text">let's roll!</p>
+        </div>
+        
+        <div class="facts-container">
+         <div class="facts">Roll your emotions, 
+          <br>&nbsp; &nbsp;
+          to find your mood
+         </div>
+        </div>
+      </div> 
+    </div>
+     
+   
+  <script src="{{ url_for('static', filename= '/js/genre_script.js')}}"></script>
+  
+</body>
+</html>

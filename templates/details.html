@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Search Results</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet"  href="{{ url_for('static', filename='/css/details.css') }}">
+</head>
+<body>
+<div class="main">
+  <div class="film-finder"><h1>Film Finder</h1></div>
+  <div class="details">
+    <div class="poster">
+      <img src="" class="fixed-height-image" alt="Movie Poster">
+    </div>
+    <div class="info">
+      <div class="label">
+        <div class="poster-title"><h2></h2></div>
+        <span class="time"></span>
+      </div>
+      <br>
+    <div class="genre"></div>
+      <div class="release_date"></div>
+      <div class="director1"><span class="info-label">Director:</div> 
+      <div class="cast"><span class="info-label">Cast:</span></div>
+      <div class="cast-photos"></div>              
+      <div class="overview">
+      <span class="info-label">Disclaimer:</span>
+      </div>          
+      </div>
+  </div>
+  <div class="analyse">
+    <h3>Sentimental Analysis</h3>
+    <div class="chart">
+    </div>
+    <h4> Recommended Movies</h4>
+    <div class="recommend" id="movieList">
+    </div>
+    <br>
+    <br>
+  </div>
+  </div>
+  <script src="{{ url_for('static', filename= '/js/details.js')}}"></script>
+</body>
+</html>

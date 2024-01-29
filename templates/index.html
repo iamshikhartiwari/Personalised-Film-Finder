@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>PERSONALISED FILM FINDER</title>
+    <!-- <link rel="stylesheet" href="/css/style.css" /> -->
+    <link rel="stylesheet"  href="{{ url_for('static', filename='/css/style.css') }}">
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+   
+    <div class="sidebar">
+      <div class="logo-details"> 
+        <div class="logo_name">Home</div>
+        <i class="bx bx-menu" id="btn"></i>
+      </div>
+      <ul class="nav-list">
+        <li>
+        <a href="search.html" >
+            <i class="bx bx-search"></i>
+            <span class="links_name">Search</span>
+          </a>
+            <span class="tooltip">Search</span>
+        </li>
+        <li>
+          <a href="top_50.html" >
+            <i class='bx bxs-bar-chart-alt-2'></i>
+            <span class="links_name">Top-50</span>
+          </a>
+          <span class="tooltip">Top-50</span>
+        </li>
+        <li>
+          <a href="genre.html" >
+            <i class='bx bxs-category-alt'></i>
+            <span class="links_name">Genre</span>
+          </a>
+          <span class="tooltip">Genre</span>
+        </li>
+        <li>
+          <a href="https://www.thefactsite.com/film-television/" target="_blank">
+            <i class='bx bxs-home-smile'></i>
+            <span class="links_name">Interesting facts</span>
+          </a>
+          <span class="tooltip">Facts</span>
+        </li>
+      </ul>
+    </div>
+    <h2 style="text-align: center; position: fixed; z-index:5; top: 30px; right: 60px; color: aliceblue; font-size: 3.5rem;">FILM FINDER</h2>
+    <div class="container">
+      <lottie-player class="lottie" src="https://assets7.lottiefiles.com/datafiles/397tkqLfSbPbfm9/data.json" background="transparent"  speed="1"  style="width: 150px; height: 150px; margin:0; position: fixed; top: 5px; left: 100px; " loop  autoplay>
+        
+      </lottie-player>
+      <div class="typewriter" style="text-align: center; overflow-wrap: break-word;">
+        <h3 style="text-align: center;">Unleash Your Inner Movie Buff!</h3>
+      </div>
+   
+          <div class="image-slider">
+            <img src="{{ url_for('static', filename='/images/front-slide2.jpg') }} alt="Image ">
+            <img src="{{ url_for('static', filename='/images/front-slide3.jpg') }}" alt="Image ">
+            <img src="{{ url_for('static', filename='/images/front-slide4.jpg') }}" alt="Image">
+            <img src="{{ url_for('static', filename='/images/front-slide5.jpg') }}" alt="Image">
+            <img src="{{ url_for('static', filename='/images/front-slide8.jpg') }}" alt="Image">
+            <img src="{{ url_for('static', filename='/images/front-slide7.jpg') }}" alt="Image">
+            <img src="{{ url_for('static', filename='/images/front-slide9.jpg') }}" alt="Image">
+            <img src="{{ url_for('static', filename='/images/front-slide10.jpg') }}" alt="Image">
+            <img src="{{ url_for('static', filename='/images/front-slide11.jpg') }}" alt="Image">
+            <img src="{{ url_for('static', filename='/images/front-slide12.jpg') }}" alt="Image">
+            <img src="{{ url_for('static', filename='/images/front-slide13.jpg') }}" alt="Image">
+            <img src="{{ url_for('static', filename='/images/front-slide6.jpg') }}" alt="Image">
+              <img src="{{ url_for('static', filename='/images/aven.jpg') }}" alt="Image 3">
+             <img src="{{ url_for('static', filename='/images/front-slide1.jpg') }}" alt="Image ">
+            <img src="{{ url_for('static', filename='/images/front-slide14.jpg') }}" alt="Image">
+            <img src="{{ url_for('static', filename='/images/front-slide15.jpg') }}" alt="Image">
+          </div>
+        </div>
+  <div class="contain">
+      <div class="menu-toggle">
+          <i class="fa fa-linkedin" style="font-size:48px;color:white"></i>
+      </div>
+      <div class="menu-round">
+       <div class="btn-app" >
+         <a class="fa fa-user"href="https://www.linkedin.com/in/divya-lalwani" target="_blank"> </a>
+        </div>
+        <div class="btn-app">
+          <a class="fa fa-user"href="https://www.linkedin.com/in/darpan-anand-58a1041b8" target="_blank"> </a>
+        </div>
+        <div class="btn-app">
+          <a class="fa fa-user"href="https://www.linkedin.com/in/charu-agarwal-81b769202" target="_blank"> </a>
+        </div>
+      </div> 
+    </div>
+
+    <script src="{{ url_for('static', filename='/js/script.js') }}"></script>
+
+  </body>
+</html>

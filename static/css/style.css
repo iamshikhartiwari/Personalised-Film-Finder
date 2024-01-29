@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" , sans-serif;
+}
+.sidebar{
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 78px;
+  background: #11101D;
+  padding: 6px 14px;
+  z-index: 99;
+  transition: all 0.5s ease;
+  box-shadow: #f2f2f2;
+}
+.sidebar.open{
+  width: 250px;
+}
+.sidebar .logo-details{
+  height: 70px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 0px;
+}
+.sidebar .logo-details .logo_name{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.sidebar.open .logo-details .icon,
+.sidebar.open .logo-details .logo_name{
+  opacity: 1;
+}
+.sidebar .logo-details #btn{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  font-size: 43px;
+  transition: all 0.4s ease;
+  font-size: 40px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+.sidebar.open .logo-details #btn{
+  text-align: right;
+}
+.sidebar i{
+  color: #fff;
+  height: 60px;
+  min-width: 50px;
+  font-size: 30px;
+  text-align: center;
+  line-height: 60px;
+}
+.sidebar .nav-list{
+  margin-top: 20px;
+  height: 100%;
+}
+.sidebar li{
+  position: relative;
+  margin: 8px 0;
+  list-style: none;
+}
+.sidebar li .tooltip{
+  position: absolute;
+  top: -20px;
+  left: calc(100% + 15px);
+  z-index: 3;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 400;
+  opacity: 0;
+  white-space: nowrap;
+  pointer-events: none;
+  transition: 0s;
+}
+.sidebar li:hover .tooltip{
+  opacity: 1;
+  pointer-events: auto;
+  transition: all 0.4s ease;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.sidebar.open li .tooltip{
+  display: none;
+}
+
+.sidebar li a{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  background: #11101D;
+}
+.sidebar li a:hover{
+  background: #FFF;
+}
+.sidebar li a .links_name{
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.4s;
+}
+.sidebar.open li a .links_name{
+  opacity: 1;
+  pointer-events: auto;
+}
+.sidebar li a:hover .links_name,
+.sidebar li a:hover i{
+  transition: all 0.5s ease;
+  color: #11101D;
+}
+.sidebar li i{
+  height: 56px;
+    line-height: 56px;
+    font-size: 24px;
+    border-radius: 17px;
+}
+
+.container {
+  background:linear-gradient(to bottom right ,rgb(173, 173, 221),black,rgb(173, 173, 221));
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    position: sticky;
+}
+
+
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  6.25% {
+    transform: translateX(-100%);
+  }
+  12.5% {
+    transform: translateX(-200%);
+  }
+  18.75% {
+    transform: translateX(-300%);
+  }
+  25% {
+    transform: translateX(-400%);
+  }
+  31.25% {
+    transform: translateX(-500%);
+  }
+  37.5% {
+    transform: translateX(-600%);
+  }
+  43.75% {
+    transform: translateX(-700%);
+  }
+  50% {
+    transform: translateX(-800%);
+  }
+  56.25% {
+    transform: translateX(-900%);
+  }
+  62.5% {
+    transform: translateX(-1000%);
+  }
+  68.75% {
+    transform: translateX(-1100%);
+  }
+  75% {
+    transform: translateX(-1200%);
+  }
+  81.25% {
+    transform: translateX(-1300%);
+  }
+  87.5% {
+    transform: translateX(-1400%);
+  }
+  93.75% {
+    transform: translateX(-1500%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+
+ .image-slider {
+  display: flex;
+    width: 1024px;
+    animation: slide 2800s linear infinite;
+    height: 187px;
+    position: absolute;
+    bottom: 0;
+}
+
+.container .image-slider img {
+  display: flex !important;
+  flex-shrink: 1;
+  width: 561px;
+  height: 183px;
+  object-fit: cover;
+  object-position: center;
+}
+h3{
+  margin-bottom:200px;
+  font-size: 2rem;
+  color: white;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+}
+@media (max-width: 420px) {
+  .sidebar li .tooltip{
+    display: none;
+  }
+}
+
+/* for linkedin */
+.contain {
+  position: fixed;
+  bottom: 0.5em;
+  right: 0.5em;
+  }
+  
+  .menu-toggle {
+  width: 46px;
+  height: 40px;
+  border-radius: 30%;
+  background-color: #4644fd;
+  box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  z-index: 5;
+  bottom: 0;
+  right: 0;
+  display: table;
+  text-align: center;
+  }
+  
+  .menu-toggle .fa {
+  color: #fff;
+  font-size: 2em;
+  display: table-cell;
+  vertical-align: middle;
+  transition: 0.4s;
+  }
+  
+  .btn-app {
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 50%;
+  position: absolute;
+  padding-top:10px;
+  box-sizing: border-box;
+  background-color: #41497d;
+  color: #fff;
+  
+  text-align: center;
+  }
+  
+  .open .btn-app {
+  box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+  
+  .menu-round {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 3;
+  }
+  
+  .menu-round .btn-app {
+  bottom: 0.25em;
+  right: 0.25em;
+  transition: 0.4s;
+  }
+  
+  .menu-round.open .btn-app:nth-of-type(1) {
+  right: 0.5em;
+  bottom: 4.25em;
+  
+  transition-delay: 0.2s;
+  }
+  
+  .menu-round.open .btn-app:nth-of-type(2) {
+  right: 3.5em;
+  bottom: 3.5em;
+  transition-delay: 0.1s;
+  }
+  
+  .menu-round.open .btn-app:nth-of-type(3) {
+  right: 4.25em;
+  bottom: 0.5em;
+  }
+  
+  .fa-user{
+    color:white
+  }
+  body {
+    background: #333;
+    padding-top: 5em;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .typewriter h3 {
+    color: #fff;
+    overflow: hidden; 
+    border-right: .15em solid orange; 
+    margin: 0 auto;
+    letter-spacing: .15em;
+    font-size: 2rem;
+    animation: 
+      typing 5s steps(30, end),
+      blink-caret .5s step-end infinite;
+      margin-bottom:150px ;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+  }
+body{
+  margin: 0 !important;
+  padding: 0 !important;
+
+}
+.sidebar{
+  box-shadow:-1px 4px 41px 10px ;
+}
